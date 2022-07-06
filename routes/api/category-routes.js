@@ -45,9 +45,20 @@ router.post('/', async (req, res) => {
 router.put('/:id', async (req, res) => {
   // update a category by its `id` value
   try {
-    
-  } catch (err) {
+    const categoryData = Category.update(req.body, {
+      where: {
+        id: req.params.id
+      }
+    });
 
+    if (!categoryData) {
+      res.status(404);
+      return;
+    };
+
+    res.status(200).json(categoryData)
+  } catch (err) {
+    res.status(400).json(err)
   }
 });
 
