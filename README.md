@@ -14,6 +14,10 @@ To install create a .env file with DB_USER, DB_PW, and DB_NAME variables, DB_NAM
 
 ## Demo
 
+
+https://user-images.githubusercontent.com/101996599/177912170-c521d9ba-8b93-4d9d-a9d6-754c8eef1ab2.mp4
+
+
 ## License
 [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
 
